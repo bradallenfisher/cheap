@@ -1,0 +1,67 @@
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-1;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-2;
+  }
+}
+
+p {
+  line-height: 2;
+}
+
+h1 {
+  font-family: 'Josefin Sans';
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+  padding: 20px 0;
+}
+
+h2 {
+    font-family: 'Josefin Sans';
+    font-size: 3em;
+    font-weight: 700;
+
+}
+
+img, media {
+  max-width: 100%;
+}
+.addtoany_list {
+  line-height: 16px;
+  margin: 0 0 30px 0;
+  display: block;
+}
+
+.field--name-body ul {
+  list-style: disc;
+  list-style-position: outside;
+  font-size: 1.3em;
+  margin: 20px 0 20px 40px;
+  line-height:1.5;
+  ul {
+    font-size: inherit;
+  }
+}
+.field--name-body ol {
+  list-style: decimal;
+  list-style-position: outside;
+  font-size: 1.3em;
+  margin: 20px 0 20px 40px;
+  line-height:1.5;
+  ul {
+    font-size: inherit;
+  }
+}
+img, media {
+  max-width: 100%;
+}

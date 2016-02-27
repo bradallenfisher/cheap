@@ -1,0 +1,46 @@
+.navigation {
+  display: none;
+  @include breakpoint($narrow, true) {
+    display: block;
+  }
+}
+
+.navigation.open {
+  display: block;
+  clear: both;
+  @include breakpoint($narrow, true) {
+    clear:none;
+  }
+}
+
+ul.menu {
+  padding: 0;
+}
+
+.menu {
+  margin: 0;
+
+  .leaf {
+    list-style-image: none;
+    list-style-type: none;
+  }
+
+  a {
+    background: $color-1;
+    color: $white;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+
+    @include breakpoint($narrow, true) {
+      background: inherit;
+      color: $color-1;
+      margin-bottom: 0;
+    }
+  }
+
+  @include breakpoint($narrow, true) {
+    display: flex !important;
+    float: right;
+  }
+}

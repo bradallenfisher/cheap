@@ -1,0 +1,20 @@
+@import "normalize";
+@import "bower_components/susy/sass/susy";
+@import "bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "_base/**/*.scss";
+@import "_layout/**/*.scss";
+@import "_modules/**/*.scss";
+
+// Hide the toolbar or admin menu on small screens.
+@media all and (max-width: 800px) {
+  #toolbar, #admin-menu {
+    display: none;
+  }
+
+  html {
+    body.toolbar, body.admin-menu {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+  }
+}

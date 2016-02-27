@@ -1,10 +1,10 @@
 {
-  "name": "gulp-susy-starter",
+  "name": "gulp-susy-breakpoint-glob",
   "version": "0.0.0",
   "authors": [
-    "Zell Liew <zellwk@gmail.com>"
+    "Brad Allen Fisher"
   ],
-  "license": "MIT",
+  "license": "",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -1,0 +1,41 @@
+//Links
+
+$color-1: #a3247f;
+$color-2: #720a54;
+$color-3: #2d2d2d;
+
+$white: #ffffff;
+$black: #000000;
+
+// set up susy layout
+$total-columns:   12;
+$container-width: 1200px;
+
+// $debug is either "show" or "hide"
+$debug: hide;
+
+$susy: (
+  columns: $total-columns,
+  gutters: 1.5,
+  container: $container-width,
+  box-sizing: border-box,
+  math: fluid,
+
+  debug: (
+    image: $debug,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$port: 360px;
+$tablet: 768px;
+$narrow: 800px;
+
+
+
+// Legacy support.
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie8: true;
