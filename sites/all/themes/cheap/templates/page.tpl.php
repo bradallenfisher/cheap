@@ -1,6 +1,8 @@
 <div class="page">
     <?php print $messages; ?>
-
+    <div class="logo">
+    <img src="/sites/all/themes/cheap/images/logo.svg" />
+    </div>
     <div class="content">
       <?php print render($page['content']); ?>
     </div>

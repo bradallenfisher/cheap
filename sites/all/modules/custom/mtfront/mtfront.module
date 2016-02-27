@@ -1,0 +1,6 @@
+<?php
+function mtfront_page_alter(&$page) {
+  if (isset($page['default_message']['#markup']) && is_string($page['default_message']['#markup'])) {
+    $page['default_message']['#markup'] = strtr($page['default_message']['#markup'], '<p>' . t('No front page content has been created yet.') . '</p>', '');
+  }
+}
