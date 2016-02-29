@@ -1,0 +1,33 @@
+.field-name-body {
+  clear:both;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @include breakpoint($tablet) {
+    margin: 0 0 0 100px;
+  }
+
+}
+
+h1,h2 {
+    @include breakpoint($tablet) {
+      margin: .5em .25em;
+    }
+
+}
+.finish-label {
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: 100;
+}
+p.finish {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 0px;
+
+  @include breakpoint($tablet) {
+      padding: 0;
+  }
+
+  text-transform: uppercase;
+}

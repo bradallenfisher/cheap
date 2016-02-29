@@ -1,4 +1,0 @@
-<?php
-function mtfront_page_alter(&$page) {
-  unset($page['content']['system_main']['default_message']['#markup']);
-}

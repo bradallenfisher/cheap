@@ -19,6 +19,7 @@ stylesheets[all][] = css/styles.css
 ; Regions
 ; ========================================
 regions[menu] = Menu
+regions[social] = Social
 regions[content] = Content
 regions[side] = Side
 regions[footer] = Footer

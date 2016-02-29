@@ -1,0 +1,22 @@
+<?php
+function cheap_page_alter(&$page) {
+  unset($page['content']['system_main']['default_message']['#markup']);
+}
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function cheap_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['home_page'] = array(
+    'label' => t('Home Page'),
+    'custom settings' => TRUE,
+  );
+}
+/**
+ * Implements hook_preprocess_node().
+ */
+function cheap_preprocess_node(&$variables) {
+  if($variables['view_mode'] == 'home_page') {
+    $variables['theme_hook_suggestions'][] = 'node__' . $variables['type'] . '__home_page';
+  }
+}
