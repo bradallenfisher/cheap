@@ -1,8 +1,10 @@
 .header {
-   @include container();
+  @include container();
+  overflow: hidden;
 }
 .main-wrapper  {
   @include container();
+  overflow: hidden;
 }
 
 @include breakpoint($tablet, true) {
